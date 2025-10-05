@@ -13,7 +13,7 @@ CTMS_URL = os.getenv("CTMS_URL")
 REDIS_HOST = os.getenv("REDIS_HOST", "localhost")
 REDIS_PORT = int(os.getenv("REDIS_PORT", 6379))
 REDIS_DB = int(os.getenv("REDIS_DB", 0))
-REDIS_SESSION_KEY = "ctms:session_id"
+REDIS_SESSION_KEY = "CTMS:session_id"
 SESSION_FILE = "CTMSsession_id.txt"
 
 # ─── Authenticate ──────────────────────────────────────────

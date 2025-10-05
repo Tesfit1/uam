@@ -1,72 +1,121 @@
-import json
-from dotenv import load_dotenv
-import requests
 import os
+import json
+import requests
 import pandas as pd
+import redis
+from dotenv import load_dotenv
 
+# ─── Load Environment Variables ─────────────────────────────
 load_dotenv()
 CTMS_API_VERSION = os.getenv("CTMS_API_VERSION")
 CTMS_URL = os.getenv("CTMS_URL")
 CLIENT_ID = os.getenv("CLIENT_ID")
+
+REDIS_HOST = os.getenv("REDIS_HOST", "localhost")
+REDIS_PORT = int(os.getenv("REDIS_PORT", 6379))
+REDIS_DB = int(os.getenv("REDIS_DB", 0))
+REDIS_SESSION_KEY = "ctms:session_id"
+REDIS_MODIFIED_KEY = "ctms:last_modified_person"
 SESSION_FILE = "CTMSsession_id.txt"
-with open(SESSION_FILE) as f:
-    SESSION_ID = f.read().strip()
-print(f"Session ID: {SESSION_ID}")
+FALLBACK_DATE = os.getenv("CTMS_FALLBACK_DATE", "2000-01-01T00:00:00.000Z")
 
 
-def retrieve_Study_Person_details():
+# ─── Redis + File Fallback Utilities ────────────────────────
+def load_session_id():
+    try:
+        r = redis.Redis(host=REDIS_HOST, port=REDIS_PORT, db=REDIS_DB, socket_connect_timeout=3)
+        session_id = r.get(REDIS_SESSION_KEY)
+        if session_id:
+            print("✅ Session ID loaded from Redis.")
+            return session_id.decode()
+        else:
+            print("⚠️ Redis key not found. Falling back to file.")
+    except Exception as e:
+        print(f"⚠️ Redis unavailable: {e}. Falling back to file.")
+
+    try:
+        with open(SESSION_FILE) as f:
+            session_id = f.read().strip()
+            if session_id:
+                print("✅ Session ID loaded from file.")
+                return session_id
+            else:
+                print("❌ Session ID file is empty.")
+    except Exception as e:
+        print(f"❌ Failed to load session ID from file: {e}")
+    return None
+
+
+def get_last_modified_date():
+    try:
+        r = redis.Redis(host=REDIS_HOST, port=REDIS_PORT, db=REDIS_DB)
+        value = r.get(REDIS_MODIFIED_KEY)
+        if value:
+            print(f"🕒 Last modified date from Redis: {value.decode()}")
+            return value.decode()
+        else:
+            print("⚠️ No last modified date found in Redis. Using fallback.")
+            return FALLBACK_DATE
+    except Exception as e:
+        print(f"❌ Redis error: {e}")
+        return FALLBACK_DATE
+
+
+def update_last_modified_date(df):
+    if df.empty or 'modified_date__v' not in df.columns:
+        return
+    try:
+        latest_date = df['modified_date__v'].dropna().max()
+        if latest_date:
+            r = redis.Redis(host=REDIS_HOST, port=REDIS_PORT, db=REDIS_DB)
+            r.set(REDIS_MODIFIED_KEY, latest_date)
+            print(f"✅ Updated Redis with latest modified_date__v: {latest_date}")
+    except Exception as e:
+        print(f"❌ Failed to update Redis: {e}")
+
+
+# ─── CTMS Query ─────────────────────────────────────────────
+def retrieve_Study_Person_details(session_id, modified_date):
     users = []
     base_url = f"{CTMS_URL}/api/{CTMS_API_VERSION}/query"
     headers = {
         "Content-Type": "application/x-www-form-urlencoded",
         "Accept": "application/json",
         "X-VaultAPI-DescribeQuery": "true",
-        "Authorization": f"Bearer {SESSION_ID}"
+        "Authorization": f"Bearer {session_id}"
     }
-    payload = {
-        "q": """SELECT email__clin, name__v , last_name__v, first_name__v,  person_type__cr.name__v, team_role__vr.name__v, site_connect_user__v, study__clinr.name__v, study__clinr.status__v, study_country__clinr.name__v, site__clinr.name__v, start_date__clin, end_date__clin, state__v
-FROM study_person__clin
-WHERE 
-  person_type__cr.name__v != 'Internal' AND 
-  previous_study_state__c = 'active__c' AND (
-    team_role__vr.name__v = 'Deputy Investigator' OR
-    team_role__vr.name__v = 'Laboratory Staff' OR
-    team_role__vr.name__v = 'Principal Investigator' OR
-    team_role__vr.name__v = 'Regulatory Document Co-ordinator' OR
-    team_role__vr.name__v = 'Study Co-ordinator' OR
-    team_role__vr.name__v = 'Study Nurse' OR
-    team_role__vr.name__v = 'Subinvestigator'
-  )
-"""
-    }
-
+    query = f"""
+    SELECT email__clin, name__v , last_name__v, first_name__v, person_type__cr.name__v, team_role__vr.name__v, site_connect_user__v, study__clinr.name__v, study__clinr.status__v, study_country__clinr.name__v, site__clinr.name__v, start_date__clin, end_date__clin, state__v, modified_date__v
+    FROM study_person__clin
+    WHERE 
+      person_type__cr.name__v != 'Internal' AND 
+      previous_study_state__c = 'active__c' AND (
+        team_role__vr.name__v = 'Deputy Investigator' OR
+        team_role__vr.name__v = 'Laboratory Staff' OR
+        team_role__vr.name__v = 'Principal Investigator' OR
+        team_role__vr.name__v = 'Regulatory Document Co-ordinator' OR
+        team_role__vr.name__v = 'Study Co-ordinator' OR
+        team_role__vr.name__v = 'Study Nurse' OR
+        team_role__vr.name__v = 'Subinvestigator'
+      ) AND modified_date__v > '{modified_date}'
+    """
+    payload = {"q": query}
     url = base_url
+
     while url:
-        if url == base_url:
-            response = requests.post(url, data=payload, headers=headers)
-        else:
-            response = requests.get(url, headers=headers)
+        response = requests.post(url, data=payload, headers=headers) if url == base_url else requests.get(url,
+                                                                                                          headers=headers)
         response.raise_for_status()
         json_response = response.json()
-        print(json.dumps(json_response, indent=4))  # Debug
-
-        # Append users from this page
         users.extend(json_response.get("data", []))
-
-        # Get next page URL if present
         next_page = json_response.get("responseDetails", {}).get("next_page")
-        if next_page:
-            url = CTMS_URL + next_page
-            payload = None  # For GET requests, don't send payload
-        else:
-            url = None
+        url = CTMS_URL + next_page if next_page else None
+        payload = None
 
-    users_df = pd.DataFrame(users)
-    # print(f"Total users retrieved: {len(users_df)}")
-    # users_df.to_csv("study_person_list.csv", index=False)
-    return users_df
+    return pd.DataFrame(users)
 
 
+# ─── Transformation Utilities ───────────────────────────────
 def mapper(user_df):
     role_map = {
         "Deputy Investigator": "CDMS Principal Investigator",
@@ -99,8 +148,7 @@ def column_renamer(df):
         "state__v": "State",
         "mapped_role": "Study Role",
     }
-    df = df.rename(columns=column_mapping)
-    return df
+    return df.rename(columns=column_mapping)
 
 
 def column_generate(df):
@@ -127,17 +175,9 @@ def column_generate(df):
     df["Status"] = "Active"
     df["Security Policy"] = "VeevaId"
 
-    df = df.drop(
-        columns=[
-            "Person Type",
-            "Team Role",
-            "Site Connect User",
-            "Study Status",
-            "End Date",
-            "State",
-        ],
-        errors="ignore",
-    )
+    df = df.drop(columns=[
+        "Person Type", "Team Role", "Site Connect User", "Study Status", "End Date", "State"
+    ], errors="ignore")
 
     desired_order = [
         'User Name', 'Email', 'User Type', 'Title', 'Last Name', 'First Name', 'Company',
@@ -148,21 +188,29 @@ def column_generate(df):
         'Service Availability Notifications', 'Product Announcement Emails', 'Status'
     ]
 
-    # Step 5: Ensure all columns exist, fill missing ones with None
     for col in desired_order:
         if col not in df.columns:
             df[col] = None
 
-    # Step 6: Reorder the DataFrame
-    df = df[desired_order]
-
-    return df
+    return df[desired_order]
 
 
+# ─── Main Execution ─────────────────────────────────────────
 if __name__ == "__main__":
-    users_df = retrieve_Study_Person_details()
-    mapped_users_df = mapper(users_df)
-    mapped_users_df = column_renamer(mapped_users_df)
-    mapped_users_df = column_generate(mapped_users_df)
-    mapped_users_df.to_csv("study_person_list.csv", index=False)
-    print("✅ Exported study_person_list.csv")
+    session_id = load_session_id()
+    if not session_id:
+        print("❌ No valid session ID. Aborting.")
+        exit(1)
+
+    modified_date = get_last_modified_date()
+    users_df = retrieve_Study_Person_details(session_id, modified_date)
+
+    if users_df.empty:
+        print("✅ No new study person records to process.")
+    else:
+        mapped_users_df = mapper(users_df)
+        mapped_users_df = column_renamer(mapped_users_df)
+        mapped_users_df = column_generate(mapped_users_df)
+        mapped_users_df.to_csv("study_person_list.csv", index=False)
+        update_last_modified_date(mapped_users_df)
+        print("✅ Exported study_person_list.csv")
