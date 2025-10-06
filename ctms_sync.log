@@ -1,0 +1,98 @@
+2025-10-05 16:36:37,562 [INFO] \U0001f504 CTMS sync started.
+2025-10-05 16:36:41,590 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-10-05 16:36:43,162 [INFO] No new studies to process.
+2025-10-05 16:36:43,163 [INFO] \u2705 CTMS sync completed.
+2025-10-05 17:54:35,762 [INFO] \U0001f504 CTMS sync started.
+2025-10-05 17:54:37,814 [WARNING] No last modified date found in Redis. Using fallback.
+2025-10-05 17:54:39,452 [INFO] No new studies to process.
+2025-10-05 17:54:39,452 [INFO] \u2705 CTMS sync completed.
+2025-10-05 17:55:55,459 [INFO] \U0001f504 CTMS sync started.
+2025-10-05 17:55:57,508 [WARNING] No last modified date found in Redis. Using fallback.
+2025-10-05 17:55:58,383 [INFO] Saved 13 studies to study_output.csv
+2025-10-05 17:55:58,386 [INFO] 13 studies marked as processed.
+2025-10-05 17:56:00,420 [INFO] Updated Redis with latest modified_date__v: 2025-10-03T09:40:32.000Z
+2025-10-05 17:56:00,420 [INFO] \u2705 CTMS sync completed.
+2025-10-05 19:51:08,958 [INFO] \U0001f504 CTMS sync started.
+2025-10-05 19:51:13,031 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-10-05 19:51:14,637 [INFO] Saved 13 studies to study_output.csv
+2025-10-05 19:51:18,674 [ERROR] Failed to update Redis: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-10-05 19:51:18,674 [INFO] \u2705 CTMS sync completed.
+2025-10-05 19:52:39,899 [INFO] \U0001f504 CTMS sync started.
+2025-10-05 19:52:43,935 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-10-05 19:52:45,537 [INFO] Saved 13 studies to study_output.csv
+2025-10-05 19:52:49,589 [ERROR] Failed to update Redis: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-10-05 19:52:49,589 [INFO] \u2705 CTMS sync completed.
+2025-10-05 19:53:41,339 [INFO] \U0001f504 CTMS sync started.
+2025-10-05 19:53:43,395 [INFO] Last modified date from Redis: 2025-10-03T09:40:32.000Z
+2025-10-05 19:53:44,977 [WARNING] No studies returned.
+2025-10-05 19:53:44,981 [WARNING] No studies retrieved.
+2025-10-05 19:54:40,491 [INFO] \U0001f504 CTMS sync started.
+2025-10-05 19:54:42,537 [INFO] Last modified date from Redis: 2025-10-03T09:40:32.000Z
+2025-10-05 19:54:44,194 [WARNING] No studies returned.
+2025-10-05 19:54:44,199 [WARNING] No studies retrieved.
+2025-10-05 19:57:18,399 [INFO] \U0001f504 CTMS sync started.
+2025-10-05 19:57:20,445 [INFO] Last modified date from Redis: 2025-10-03T09:40:32.000Z
+2025-10-05 19:57:21,286 [WARNING] No studies returned.
+2025-10-05 19:57:21,291 [WARNING] No studies retrieved.
+2025-10-05 20:01:46,716 [INFO] \U0001f504 CTMS sync started.
+2025-10-05 20:01:50,757 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-10-05 20:01:51,734 [INFO] Saved 13 studies to study_output.csv
+2025-10-05 20:01:55,802 [ERROR] Failed to update Redis: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-10-05 20:01:55,802 [INFO] \u2705 CTMS sync completed.
+2025-10-05 20:02:25,468 [INFO] \U0001f504 CTMS sync started.
+2025-10-05 20:02:29,499 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-10-05 20:02:30,353 [INFO] Saved 13 studies to study_output.csv
+2025-10-05 20:02:34,377 [ERROR] Failed to update Redis: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-10-05 20:02:34,378 [INFO] \u2705 CTMS sync completed.
+2025-10-05 20:10:29,485 [INFO] \U0001f504 CTMS sync started.
+2025-10-05 20:10:33,553 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-10-05 20:10:34,498 [INFO] Saved 13 studies to study_output.csv
+2025-10-05 20:10:38,545 [ERROR] Failed to update Redis: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-10-05 20:10:38,545 [INFO] \u2705 CTMS sync completed.
+2025-10-05 20:12:53,253 [INFO] \U0001f504 CTMS sync started.
+2025-10-05 20:12:57,318 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-10-05 20:12:58,182 [INFO] Saved 13 studies to study_output.csv
+2025-10-05 20:13:02,203 [ERROR] Failed to update Redis: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-10-05 20:13:02,203 [INFO] \u2705 CTMS sync completed.
+2025-10-05 20:13:16,460 [INFO] \U0001f504 CTMS sync started.
+2025-10-05 20:13:20,657 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-10-05 20:13:21,618 [INFO] Saved 13 studies to study_output.csv
+2025-10-05 20:13:25,657 [ERROR] Failed to update Redis: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-10-05 20:13:25,658 [INFO] \u2705 CTMS sync completed.
+2025-10-05 20:48:30,736 [INFO] \U0001f504 CTMS sync started.
+2025-10-05 20:48:34,777 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-10-05 20:48:35,619 [INFO] Saved 13 studies to study_output.csv
+2025-10-05 20:48:39,668 [ERROR] Failed to update Redis: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-10-05 20:48:39,669 [INFO] \u2705 CTMS sync completed.
+2025-10-05 20:50:29,610 [INFO] \U0001f504 CTMS sync started.
+2025-10-05 20:50:37,699 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-10-05 20:50:38,712 [INFO] Saved 13 studies to study_output.csv
+2025-10-05 20:50:42,736 [ERROR] Failed to update Redis: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-10-05 20:50:42,737 [INFO] \u2705 CTMS sync completed.
+2025-10-05 20:50:47,795 [INFO] \U0001f504 CTMS sync started.
+2025-10-05 20:54:56,023 [INFO] \U0001f504 CTMS sync started.
+2025-10-05 20:55:00,092 [INFO] Last modified date from Redis: 2025-10-03T09:40:32.000Z
+2025-10-05 20:55:01,539 [WARNING] No studies returned.
+2025-10-05 20:55:01,544 [WARNING] No studies retrieved.
+2025-10-06 10:13:03,627 [INFO] \U0001f504 CTMS sync started.
+2025-10-06 10:13:07,702 [INFO] Last modified date from Redis: 2025-10-03T09:40:32.000Z
+2025-10-06 10:13:08,514 [ERROR] API returned an error: [{'type': 'INVALID_SESSION_ID', 'message': 'Invalid or expired session ID.'}]
+2025-10-06 10:13:08,520 [WARNING] No studies retrieved.
+2025-10-06 10:13:27,863 [INFO] \U0001f504 CTMS sync started.
+2025-10-06 10:13:31,947 [INFO] Last modified date from Redis: 2025-10-03T09:40:32.000Z
+2025-10-06 10:13:32,748 [ERROR] API returned an error: [{'type': 'INVALID_SESSION_ID', 'message': 'Invalid or expired session ID.'}]
+2025-10-06 10:13:32,756 [WARNING] No studies retrieved.
+2025-10-06 10:14:46,521 [INFO] \U0001f504 CTMS sync started.
+2025-10-06 10:14:50,605 [INFO] Last modified date from Redis: 2025-10-03T09:40:32.000Z
+2025-10-06 10:14:51,431 [WARNING] No studies returned.
+2025-10-06 10:14:51,438 [WARNING] No studies retrieved.
+2025-10-06 10:15:44,386 [INFO] \U0001f504 CTMS sync started.
+2025-10-06 10:15:52,497 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-10-06 10:15:53,677 [INFO] Saved 13 studies to study_output.csv
+2025-10-06 10:15:57,748 [ERROR] Failed to update Redis: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-10-06 10:15:57,748 [INFO] \u2705 CTMS sync completed.
+2025-10-06 10:23:43,922 [INFO] \U0001f504 CTMS sync started.
+2025-10-06 10:23:52,030 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-10-06 10:23:53,399 [INFO] Saved 13 studies to study_output.csv
+2025-10-06 10:23:57,454 [ERROR] Failed to update Redis: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-10-06 10:23:57,455 [INFO] \u2705 CTMS sync completed.

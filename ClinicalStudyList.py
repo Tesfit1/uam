@@ -12,7 +12,7 @@ from datetime import datetime
 load_dotenv()
 CTMS_API_VERSION = os.getenv("CTMS_API_VERSION")
 CTMS_URL = os.getenv("CTMS_URL")
-REDIS_SESSION_KEY = "ctms:session_id"
+REDIS_SESSION_KEY = "CTMS:session_id"
 SESSION_FILE = "CTMSsession_id.txt"
 OUTPUT_CSV = os.getenv("CTMS_STUDY_CSV") or "ctms_study_list.csv"
 # PROCESSED_CSV = "processed_studies.csv"
