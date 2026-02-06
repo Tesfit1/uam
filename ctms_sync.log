@@ -115,3 +115,165 @@
 2025-12-08 16:06:17,937 [INFO] Saved 2 studies to study_output.csv
 2025-12-08 16:06:21,990 [ERROR] Failed to update Redis: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
 2025-12-08 16:06:21,990 [INFO] \u2705 CTMS sync completed.
+2026-02-06 17:25:01,803 [INFO] \U0001f504 CTMS sync started.
+2026-02-06 17:25:09,952 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2026-02-06 17:25:11,135 [INFO] Saved 8 studies to study_output.csv
+2026-02-06 17:25:11,135 [INFO] \u2705 CTMS sync completed.
+2026-02-06 17:33:41,365 [INFO] \U0001f504 CTMS sync started.
+2026-02-06 17:33:49,518 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2026-02-06 17:33:50,836 [INFO] Saved 8 studies to study_output.csv
+2026-02-06 17:33:50,836 [INFO] \u2705 CTMS sync completed.
+2026-02-06 17:34:11,744 [INFO] \U0001f504 CTMS sync started.
+2026-02-06 17:34:19,841 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2026-02-06 17:34:21,119 [INFO] Saved 6 studies to study_output.csv
+2026-02-06 17:34:21,120 [INFO] \u2705 CTMS sync completed.
+2026-02-06 17:34:58,317 [INFO] \U0001f504 CTMS sync started.
+2026-02-06 17:35:06,437 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2026-02-06 17:35:07,696 [INFO] Saved 4 studies to study_output.csv
+2026-02-06 17:35:07,697 [INFO] \u2705 CTMS sync completed.
+2026-02-06 17:39:38,782 [INFO] \U0001f504 CTMS sync started.
+2026-02-06 17:39:46,941 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2026-02-06 17:39:48,202 [INFO] Saved 4 studies to study_output.csv
+2026-02-06 17:39:48,203 [INFO] \u2705 CTMS sync completed.
+2026-02-06 17:46:46,179 [INFO] \U0001f504 CTMS sync started.
+2026-02-06 17:46:54,337 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2026-02-06 17:47:23,111 [INFO] \U0001f504 CTMS sync started.
+2026-02-06 17:47:31,271 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2026-02-06 17:47:32,485 [INFO] Saved 4 studies to study_output.csv
+2026-02-06 17:47:32,486 [INFO] \u2705 CTMS sync completed.
+2026-02-06 17:49:12,639 [INFO] \U0001f504 CTMS sync started.
+2026-02-06 17:49:20,771 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2026-02-06 17:49:22,382 [INFO] Saved 4 studies to study_output.csv
+2026-02-06 17:49:22,382 [INFO] \u2705 CTMS sync completed.
+2026-02-06 17:50:33,754 [INFO] \U0001f504 CTMS sync started.
+2026-02-06 17:50:41,882 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2026-02-06 17:50:43,060 [INFO] Saved 4 studies to clinicalstudylist.json
+2026-02-06 17:50:43,060 [INFO] \u2705 CTMS sync completed.
+2026-02-06 20:20:04,722 [INFO] \U0001f504 CTMS sync started.
+2026-02-06 20:20:12,853 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2026-02-06 20:20:15,534 [INFO] Saved 4 studies to clinicalstudylist.json
+2026-02-06 20:20:15,534 [INFO] \u2705 CTMS sync completed.
+2026-02-06 20:47:29,932 [INFO] \U0001f504 CTMS sync started.
+2026-02-06 20:47:34,623 [INFO] CDMS Session ID loaded from file.
+2026-02-06 20:47:39,213 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2026-02-06 20:47:41,921 [INFO] Checking CDMS with query: SELECT name__v FROM study__v WHERE (name__v = '2111-2111' OR name__v = '497575_Tosca_V2V' OR name__v = '1141-0329' OR name__v = '917761_Tosca_V2V')
+2026-02-06 20:47:42,811 [WARNING] CDMS query error: [{'type': 'INVALID_SESSION_ID', 'message': 'Invalid or expired session ID.'}]. Proceeding without filtering.
+2026-02-06 20:47:42,826 [INFO] Saved 4 studies to clinicalstudylist.json
+2026-02-06 20:47:42,828 [INFO] \u2705 CTMS sync completed. 4 studies saved.
+2026-02-06 20:49:03,319 [INFO] \U0001f504 CTMS sync started.
+2026-02-06 20:49:07,533 [INFO] CDMS Session ID loaded from file.
+2026-02-06 20:49:11,892 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2026-02-06 20:49:13,222 [INFO] Checking CDMS with query: SELECT name__v FROM study__v WHERE (name__v = '2111-2111' OR name__v = '497575_Tosca_V2V' OR name__v = '1141-0329' OR name__v = '917761_Tosca_V2V')
+2026-02-06 20:49:13,950 [WARNING] CDMS query error: [{'type': 'INVALID_SESSION_ID', 'message': 'Invalid or expired session ID.'}]. Proceeding without filtering.
+2026-02-06 20:49:13,954 [INFO] Saved 4 studies to clinicalstudylist.json
+2026-02-06 20:49:13,955 [INFO] \u2705 CTMS sync completed. 4 studies saved.
+2026-02-06 20:51:54,139 [INFO] \U0001f504 CTMS sync started.
+2026-02-06 20:51:58,774 [INFO] CDMS Session ID loaded from file.
+2026-02-06 20:52:03,235 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2026-02-06 20:52:04,534 [INFO] Checking CDMS with query: SELECT name__v FROM study__v WHERE (name__v = '2111-2111' OR name__v = '497575_Tosca_V2V' OR name__v = '1141-0329' OR name__v = '917761_Tosca_V2V')
+2026-02-06 20:52:05,264 [WARNING] CDMS query error: [{'type': 'INVALID_SESSION_ID', 'message': 'Invalid or expired session ID.'}]. Proceeding without filtering.
+2026-02-06 20:52:05,267 [INFO] Saved 4 studies to clinicalstudylist.json
+2026-02-06 20:52:05,268 [INFO] \u2705 CTMS sync completed. 4 studies saved.
+2026-02-06 20:58:43,340 [INFO] \U0001f504 CTMS sync started.
+2026-02-06 20:58:47,727 [INFO] CDMS Session ID loaded from file.
+2026-02-06 20:58:52,424 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2026-02-06 20:58:53,804 [INFO] Checking CDMS with query: SELECT name__v FROM study__v WHERE (name__v = '2111-2111' OR name__v = '497575_Tosca_V2V' OR name__v = '1141-0329' OR name__v = '917761_Tosca_V2V')
+2026-02-06 20:58:54,536 [WARNING] CDMS query error: [{'type': 'INVALID_SESSION_ID', 'message': 'Invalid or expired session ID.'}]. Proceeding without filtering.
+2026-02-06 20:58:54,540 [INFO] Saved 4 studies to clinicalstudylist.json
+2026-02-06 20:58:54,540 [INFO] \u2705 CTMS sync completed. 4 studies saved.
+2026-02-06 21:02:31,832 [INFO] \U0001f504 CTMS sync started.
+2026-02-06 21:02:36,725 [INFO] CDMS Session ID loaded from file.
+2026-02-06 21:02:41,304 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2026-02-06 21:02:42,694 [INFO] Checking CDMS with query: SELECT name__v FROM study__v WHERE (name__v = '2111-2111' OR name__v = '497575_Tosca_V2V' OR name__v = '1141-0329' OR name__v = '917761_Tosca_V2V')
+2026-02-06 21:02:43,478 [WARNING] CDMS query error: [{'type': 'INVALID_SESSION_ID', 'message': 'Invalid or expired session ID.'}]. Proceeding without filtering.
+2026-02-06 21:02:43,483 [INFO] Saved 4 studies to clinicalstudylist.json
+2026-02-06 21:02:43,484 [INFO] \u2705 CTMS sync completed. 4 studies saved.
+2026-02-06 21:02:51,053 [INFO] \U0001f504 CTMS sync started.
+2026-02-06 21:02:55,826 [INFO] CDMS Session ID loaded from file.
+2026-02-06 21:03:00,620 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2026-02-06 21:03:03,235 [INFO] Checking CDMS with query: SELECT name__v FROM study__v WHERE (name__v = '2111-2111' OR name__v = '497575_Tosca_V2V' OR name__v = '1141-0329' OR name__v = '917761_Tosca_V2V')
+2026-02-06 21:03:04,057 [WARNING] CDMS query error: [{'type': 'INVALID_SESSION_ID', 'message': 'Invalid or expired session ID.'}]. Proceeding without filtering.
+2026-02-06 21:03:04,061 [INFO] Saved 4 studies to clinicalstudylist.json
+2026-02-06 21:03:04,062 [INFO] \u2705 CTMS sync completed. 4 studies saved.
+2026-02-06 21:06:03,480 [INFO] \U0001f504 CTMS sync started.
+2026-02-06 21:06:08,117 [INFO] CDMS Session ID loaded from file.
+2026-02-06 21:06:12,816 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2026-02-06 21:06:14,199 [INFO] Checking CDMS with query: SELECT name__v FROM study__v WHERE (name__v = '2111-2111' OR name__v = '497575_Tosca_V2V' OR name__v = '1141-0329' OR name__v = '917761_Tosca_V2V')
+2026-02-06 21:06:14,974 [WARNING] CDMS query error: [{'type': 'INVALID_SESSION_ID', 'message': 'Invalid or expired session ID.'}]. Proceeding without filtering.
+2026-02-06 21:06:14,977 [INFO] Saved 4 studies to clinicalstudylist.json
+2026-02-06 21:06:14,978 [INFO] \u2705 CTMS sync completed. 4 studies saved.
+2026-02-06 21:07:39,939 [INFO] \U0001f504 CTMS sync started.
+2026-02-06 21:07:44,670 [INFO] CDMS Session ID loaded from file.
+2026-02-06 21:07:49,165 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2026-02-06 21:07:50,461 [INFO] Checking CDMS with query: SELECT name__v FROM study__v WHERE (name__v = '2111-2111' OR name__v = '497575_Tosca_V2V' OR name__v = '1141-0329' OR name__v = '917761_Tosca_V2V')
+2026-02-06 21:07:51,214 [WARNING] CDMS query error: [{'type': 'INVALID_SESSION_ID', 'message': 'Invalid or expired session ID.'}]. Proceeding without filtering.
+2026-02-06 21:07:51,217 [INFO] Saved 4 studies to clinicalstudylist.json
+2026-02-06 21:07:51,218 [INFO] \u2705 CTMS sync completed. 4 studies saved.
+2026-02-06 21:09:48,630 [INFO] \U0001f504 CTMS sync started.
+2026-02-06 21:09:53,306 [INFO] CDMS Session ID loaded from file.
+2026-02-06 21:09:57,685 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2026-02-06 21:09:58,861 [INFO] Checking CDMS with query: SELECT name__v FROM study__v WHERE (name__v = '2111-2111' OR name__v = '497575_Tosca_V2V' OR name__v = '1141-0329' OR name__v = '917761_Tosca_V2V')
+2026-02-06 21:09:59,602 [WARNING] CDMS query error: [{'type': 'INVALID_SESSION_ID', 'message': 'Invalid or expired session ID.'}]. Proceeding without filtering.
+2026-02-06 21:09:59,606 [INFO] Saved 4 studies to clinicalstudylist.json
+2026-02-06 21:09:59,606 [INFO] \u2705 CTMS sync completed. 4 studies saved.
+2026-02-06 21:10:35,370 [INFO] \U0001f504 CTMS sync started.
+2026-02-06 21:10:39,908 [INFO] CDMS Session ID loaded from file.
+2026-02-06 21:10:44,505 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2026-02-06 21:10:47,134 [INFO] Checking CDMS with query: SELECT name__v FROM study__v WHERE (name__v = '2111-2111' OR name__v = '497575_Tosca_V2V' OR name__v = '1141-0329' OR name__v = '917761_Tosca_V2V')
+2026-02-06 21:10:47,923 [WARNING] CDMS query error: [{'type': 'INVALID_SESSION_ID', 'message': 'Invalid or expired session ID.'}]. Proceeding without filtering.
+2026-02-06 21:10:47,928 [INFO] Saved 4 studies to clinicalstudylist.json
+2026-02-06 21:10:47,928 [INFO] \u2705 CTMS sync completed. 4 studies saved.
+2026-02-06 21:17:21,323 [INFO] \U0001f504 CTMS sync started.
+2026-02-06 21:17:25,643 [INFO] CDMS Session ID loaded from file.
+2026-02-06 21:17:29,886 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2026-02-06 21:17:31,373 [INFO] Checking CDMS with query: SELECT name__v FROM study__v WHERE (name__v = '2111-2111' OR name__v = '497575_Tosca_V2V' OR name__v = '1141-0329' OR name__v = '917761_Tosca_V2V')
+2026-02-06 21:17:32,133 [WARNING] CDMS query error: [{'type': 'INVALID_SESSION_ID', 'message': 'Invalid or expired session ID.'}]. Proceeding without filtering.
+2026-02-06 21:17:32,138 [INFO] Saved 4 studies to clinicalstudylist.json
+2026-02-06 21:17:32,138 [INFO] \u2705 CTMS sync completed. 4 studies saved.
+2026-02-06 21:19:15,362 [INFO] \U0001f504 CTMS sync started.
+2026-02-06 21:19:20,488 [INFO] CDMS Session ID loaded from file.
+2026-02-06 21:19:25,289 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2026-02-06 21:19:26,826 [INFO] Checking CDMS with query: SELECT name__v FROM study__v WHERE (name__v = '2111-2111' OR name__v = '497575_Tosca_V2V' OR name__v = '1141-0329' OR name__v = '917761_Tosca_V2V')
+2026-02-06 21:19:26,827 [INFO] CDMS URL: https://bigxpsbx-cdms-sbx.veevavault.com/api/v24.3/query
+2026-02-06 21:19:26,827 [INFO] Session ID (first 20 chars): 3041DE9CD0A6384F65B2...
+2026-02-06 21:19:27,548 [WARNING] CDMS query error: [{'type': 'INVALID_SESSION_ID', 'message': 'Invalid or expired session ID.'}]. Proceeding without filtering.
+2026-02-06 21:19:27,558 [INFO] Saved 4 studies to clinicalstudylist.json
+2026-02-06 21:19:27,561 [INFO] \u2705 CTMS sync completed. 4 studies saved.
+2026-02-06 21:21:48,472 [INFO] \U0001f504 CTMS sync started.
+2026-02-06 21:21:52,836 [INFO] CDMS Session ID loaded from file.
+2026-02-06 21:21:57,436 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2026-02-06 21:21:58,852 [INFO] Checking CDMS with query: SELECT name__v FROM study__v WHERE (name__v = '2111-2111' OR name__v = '497575_Tosca_V2V' OR name__v = '1141-0329' OR name__v = '917761_Tosca_V2V')
+2026-02-06 21:21:58,852 [INFO] CDMS URL: https://bigxpsbx-cdms-sbx.veevavault.com/api/v24.3/query
+2026-02-06 21:21:58,852 [INFO] Session ID (first 20 chars): 3041DE9CD0A6384F65B2...
+2026-02-06 21:21:59,602 [INFO] CDMS Response Status: 200
+2026-02-06 21:21:59,602 [INFO] CDMS Response Headers: {'Server': 'nginx', 'Date': 'Fri, 06 Feb 2026 20:21:59 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'X-VaultAPI-ExecutionId': 'http-VLT-EU-CENTRAL-1-PRODUCTION-2092-3808023-43-1770409319827', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip'}
+2026-02-06 21:21:59,603 [INFO] CDMS Response JSON keys: ['responseStatus', 'errors']
+2026-02-06 21:21:59,603 [ERROR] CDMS query returned errors in 200 response: [{'type': 'INVALID_SESSION_ID', 'message': 'Invalid or expired session ID.'}]
+2026-02-06 21:21:59,603 [ERROR] Full response: {'responseStatus': 'FAILURE', 'errors': [{'type': 'INVALID_SESSION_ID', 'message': 'Invalid or expired session ID.'}]}
+2026-02-06 21:21:59,606 [INFO] Saved 4 studies to clinicalstudylist.json
+2026-02-06 21:21:59,606 [INFO] \u2705 CTMS sync completed. 4 studies saved.
+2026-02-06 21:25:09,167 [INFO] \U0001f504 CTMS sync started.
+2026-02-06 21:25:13,679 [INFO] CDMS Session ID loaded from file.
+2026-02-06 21:25:18,484 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2026-02-06 21:25:20,159 [INFO] Checking CDMS with query: SELECT name__v FROM study__v WHERE (name__v = '2111-2111' OR name__v = '497575_Tosca_V2V' OR name__v = '1141-0329' OR name__v = '917761_Tosca_V2V')
+2026-02-06 21:25:20,160 [INFO] CDMS URL: https://bigxpsbx-cdms-sbx.veevavault.com/api/v24.3/query
+2026-02-06 21:25:20,160 [INFO] Session ID (first 20 chars): E4D938CB497CC6481FB4...
+2026-02-06 21:25:20,923 [INFO] CDMS Response Status: 200
+2026-02-06 21:25:20,923 [INFO] CDMS Response Headers: {'Server': 'nginx', 'Date': 'Fri, 06 Feb 2026 20:25:21 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'X-VaultAPI-ExecutionId': 'http-VLT-EU-CENTRAL-1-PRODUCTION-2092-3817539-26-1770409521156', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip'}
+2026-02-06 21:25:20,924 [INFO] CDMS Response JSON keys: ['responseStatus', 'errors']
+2026-02-06 21:25:20,924 [ERROR] CDMS query returned errors in 200 response: [{'type': 'INVALID_SESSION_ID', 'message': 'Invalid or expired session ID.'}]
+2026-02-06 21:25:20,925 [ERROR] Full response: {'responseStatus': 'FAILURE', 'errors': [{'type': 'INVALID_SESSION_ID', 'message': 'Invalid or expired session ID.'}]}
+2026-02-06 21:25:20,928 [INFO] Saved 4 studies to clinicalstudylist.json
+2026-02-06 21:25:20,928 [INFO] \u2705 CTMS sync completed. 4 studies saved.
+2026-02-06 21:32:59,080 [INFO] \U0001f504 CTMS sync started.
+2026-02-06 21:33:03,592 [INFO] CDMS Session ID loaded from file.
+2026-02-06 21:33:08,283 [ERROR] Redis unavailable: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2026-02-06 21:33:09,611 [INFO] Checking CDMS with query: SELECT name__v FROM study__v WHERE (name__v = '2111-2111' OR name__v = '497575_Tosca_V2V' OR name__v = '1141-0329' OR name__v = '917761_Tosca_V2V')
+2026-02-06 21:33:09,611 [INFO] CDMS URL: https://bigxpsbx-cdms-sbx.veevavault.com/api/v24.3/query
+2026-02-06 21:33:09,612 [INFO] Session ID (first 20 chars): 6217C7286C95A9A09F6E...
+2026-02-06 21:33:10,607 [INFO] CDMS Response Status: 200
+2026-02-06 21:33:10,607 [INFO] CDMS Response Headers: {'Server': 'nginx', 'Date': 'Fri, 06 Feb 2026 20:33:10 GMT', 'Content-Type': 'application/json;charset=UTF-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'X-VaultAPI-ExecutionId': 'http-VLT-EU-CENTRAL-1-PRODUCTION-2092-5082366-73-1770409990619', 'X-VaultAPI-BurstLimit': '2000', 'X-VaultAPI-BurstLimitRemaining': '1997', 'Strict-Transport-Security': 'max-age=31536000;includeSubDomains', 'X-Content-Type-Options': 'nosniff', 'X-XSS-Protection': '1; mode=block', 'X-VaultAPI-UserId': '22447868', 'X-VaultAPI-TruncatedSessionId': '6217C7286C95A9A', 'X-VaultAPI-VaultId': '110377', 'X-VaultAPI-Resource': 'study__v', 'X-VaultAPI-Status': 'SUCCESS', 'Cache-Control': 'no-store', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'Vary': 'Accept-Encoding', 'Content-Encoding': 'gzip', 'Content-Language': 'en-US'}
+2026-02-06 21:33:10,607 [INFO] CDMS Response JSON keys: ['responseStatus', 'responseDetails', 'data']
+2026-02-06 21:33:10,607 [INFO] No existing studies found in CDMS.
+2026-02-06 21:33:10,611 [INFO] Saved 4 studies to clinicalstudylist.json
+2026-02-06 21:33:10,611 [INFO] \u2705 CTMS sync completed. 4 studies saved.

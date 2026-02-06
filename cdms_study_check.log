@@ -1,0 +1,45 @@
+2026-02-06 20:37:37,775 [INFO] \U0001f504 CDMS study check started.
+2026-02-06 20:37:37,777 [INFO] CDMS Session ID loaded from file.
+2026-02-06 20:37:37,796 [INFO] Loaded 4 studies from clinicalstudylist.json
+2026-02-06 20:37:37,796 [INFO] Executing VQL query: SELECT name__v FROM study__v WHERE (name__v = '2111-2111' OR name__v = '497575_Tosca_V2V' OR name__v = '1141-0329' OR name__v = '917761_Tosca_V2V')
+2026-02-06 20:37:38,449 [ERROR] API returned an error: [{'type': 'INVALID_SESSION_ID', 'message': 'Invalid or expired session ID.'}]
+2026-02-06 20:37:38,449 [INFO] No existing studies found in CDMS.
+2026-02-06 20:37:38,453 [INFO] Saved 4 new studies to filtered_studies.json
+2026-02-06 20:37:38,454 [INFO] 4 new studies ready for creation.
+2026-02-06 20:37:38,454 [INFO] \u2705 CDMS study check completed.
+2026-02-06 20:38:01,439 [INFO] \U0001f504 CDMS study check started.
+2026-02-06 20:38:01,443 [INFO] CDMS Session ID loaded from file.
+2026-02-06 20:38:01,443 [INFO] Loaded 4 studies from clinicalstudylist.json
+2026-02-06 20:38:01,444 [INFO] Executing VQL query: SELECT name__v FROM study__v WHERE (name__v = '2111-2111' OR name__v = '497575_Tosca_V2V' OR name__v = '1141-0329' OR name__v = '917761_Tosca_V2V')
+2026-02-06 20:38:02,083 [ERROR] API returned an error: [{'type': 'INVALID_SESSION_ID', 'message': 'Invalid or expired session ID.'}]
+2026-02-06 20:38:02,083 [INFO] No existing studies found in CDMS.
+2026-02-06 20:38:02,093 [INFO] Saved 4 new studies to filtered_studies.json
+2026-02-06 20:38:02,094 [INFO] 4 new studies ready for creation.
+2026-02-06 20:38:02,095 [INFO] \u2705 CDMS study check completed.
+2026-02-06 20:57:36,501 [INFO] \U0001f504 CDMS study check started.
+2026-02-06 20:57:36,573 [INFO] CDMS Session ID loaded from file.
+2026-02-06 20:57:36,623 [INFO] Loaded 4 studies from clinicalstudylist.json
+2026-02-06 20:57:36,624 [INFO] Executing VQL query: SELECT name__v FROM study__v WHERE (name__v = '2111-2111' OR name__v = '497575_Tosca_V2V' OR name__v = '1141-0329' OR name__v = '917761_Tosca_V2V')
+2026-02-06 20:57:37,833 [ERROR] API returned an error: [{'type': 'INVALID_SESSION_ID', 'message': 'Invalid or expired session ID.'}]
+2026-02-06 20:57:37,833 [INFO] No existing studies found in CDMS.
+2026-02-06 20:57:37,838 [INFO] Saved 4 new studies to filtered_studies.json
+2026-02-06 20:57:37,838 [INFO] 4 new studies ready for creation.
+2026-02-06 20:57:37,838 [INFO] \u2705 CDMS study check completed.
+2026-02-06 21:15:24,333 [INFO] \U0001f504 CDMS study check started.
+2026-02-06 21:15:24,336 [INFO] CDMS Session ID loaded from file.
+2026-02-06 21:15:24,336 [INFO] Loaded 4 studies from clinicalstudylist.json
+2026-02-06 21:15:24,337 [INFO] Executing VQL query: SELECT name__v FROM study__v WHERE (name__v = '2111-2111' OR name__v = '497575_Tosca_V2V' OR name__v = '1141-0329' OR name__v = '917761_Tosca_V2V')
+2026-02-06 21:15:25,311 [ERROR] API returned an error: [{'type': 'INVALID_SESSION_ID', 'message': 'Invalid or expired session ID.'}]
+2026-02-06 21:15:25,311 [INFO] No existing studies found in CDMS.
+2026-02-06 21:15:25,315 [INFO] Saved 4 new studies to filtered_studies.json
+2026-02-06 21:15:25,315 [INFO] 4 new studies ready for creation.
+2026-02-06 21:15:25,316 [INFO] \u2705 CDMS study check completed.
+2026-02-06 21:16:33,058 [INFO] \U0001f504 CDMS study check started.
+2026-02-06 21:16:33,062 [INFO] CDMS Session ID loaded from file.
+2026-02-06 21:16:33,062 [INFO] Loaded 4 studies from clinicalstudylist.json
+2026-02-06 21:16:33,063 [INFO] Executing VQL query: SELECT name__v FROM study__v WHERE (name__v = '2111-2111' OR name__v = '497575_Tosca_V2V' OR name__v = '1141-0329' OR name__v = '917761_Tosca_V2V')
+2026-02-06 21:16:34,151 [ERROR] API returned an error: [{'type': 'INVALID_SESSION_ID', 'message': 'Invalid or expired session ID.'}]
+2026-02-06 21:16:34,151 [INFO] No existing studies found in CDMS.
+2026-02-06 21:16:34,155 [INFO] Saved 4 new studies to filtered_studies.json
+2026-02-06 21:16:34,155 [INFO] 4 new studies ready for creation.
+2026-02-06 21:16:34,155 [INFO] \u2705 CDMS study check completed.

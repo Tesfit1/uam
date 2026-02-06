@@ -1,0 +1,34 @@
+[
+  {
+    "name__v": "2111-2111",
+    "id": "0ST000000007001",
+    "global_id__sys": "309040_0ST000000007001",
+    "connect_to_vault_cdms__v": false,
+    "IRT_NON_IRT": "IRT",
+    "milestones__vr": "final ctp"
+  },
+  {
+    "name__v": "497575_Tosca_V2V",
+    "id": "0ST000000015004",
+    "global_id__sys": "309040_0ST000000015004",
+    "connect_to_vault_cdms__v": false,
+    "IRT_NON_IRT": "NON_IRT",
+    "milestones__vr": "final ctp"
+  },
+  {
+    "name__v": "1141-0329",
+    "id": "0ST000000019011",
+    "global_id__sys": "309040_0ST000000019011",
+    "connect_to_vault_cdms__v": false,
+    "IRT_NON_IRT": "NON_IRT",
+    "milestones__vr": "final ctp"
+  },
+  {
+    "name__v": "917761_Tosca_V2V",
+    "id": "0ST00000001A014",
+    "global_id__sys": "309040_0ST00000001A014",
+    "connect_to_vault_cdms__v": false,
+    "IRT_NON_IRT": "NON_IRT",
+    "milestones__vr": "final ctp"
+  }
+]

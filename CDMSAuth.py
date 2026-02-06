@@ -6,8 +6,8 @@ import requests
 load_dotenv()
 
 # Read environment variables
-CLIENT_ID = os.getenv("CLIENT_ID")
-CLIENT_SECRET = os.getenv("CLIENT_SECRET")
+CDMS_CLIENT_ID = os.getenv("CDMS_CLIENT_ID")
+CDMS_CLIENT_SECRET = os.getenv("CDMS_CLIENT_SECRET")
 API_VERSION = os.getenv("API_VERSION")
 BASE_URL = os.getenv("BASE_URL")
 
@@ -22,8 +22,8 @@ headers = {
 
 # Define the data
 data = {
-    'username': CLIENT_ID,
-    'password': CLIENT_SECRET
+    'username': CDMS_CLIENT_ID,
+    'password': CDMS_CLIENT_SECRET
 }
 
 # Send the POST request
