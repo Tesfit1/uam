@@ -17,8 +17,7 @@ REDIS_DB = int(os.getenv("REDIS_DB", 0))
 REDIS_SESSION_KEY = "ctms:session_id"
 REDIS_MODIFIED_KEY = "ctms:last_modified_person"
 SESSION_FILE = "CTMSsession_id.txt"
-FALLBACK_DATE = os.getenv("CTMS_FALLBACK_DATE", "2000-01-01T00:00:00.000Z")
-
+FALLBACK_DATE = os.getenv("CTMS_FALLBACK_DATE", "2026-01-18T17:41:02.000Z")
 
 # ─── Redis + File Fallback Utilities ────────────────────────
 def load_session_id():
@@ -167,13 +166,12 @@ def column_generate(df):
     df["Access to All Environments"] = "No"
     df["Access to All Sites"] = "No"
     df["Study Access"] = "Enabled"
-    df["Country Access"] = ""
     df["Ignore LMS Status"] = "No"
     df["Domain Administrator"] = ""
     df["Service Availability Notifications"] = "No"
     df["Product Announcement Emails"] = "No"
     df["Status"] = "Active"
-    df["Security Policy"] = "VeevaId"
+    df["Security Policy"] = "VeevaID"
 
     df = df.drop(columns=[
         "Person Type", "Team Role", "Site Connect User", "Study Status", "End Date", "State"
